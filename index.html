@@ -34,6 +34,8 @@
     <!--[if gte IE 9]><!-->
     <!-- Carbon Ads styles -->
     <link rel="stylesheet" href="css/vendor/carbon.css" />
+    <!-- Doka Image Editor styles -->
+    <link rel="stylesheet" href="css/vendor/doka.min.css" />
     <!--<![endif]-->
     <!-- Generic page styles -->
     <style>
@@ -163,6 +165,40 @@
           id="_carbonads_js"
         ></script>
       </p>
+      <!-- Doka Image Editor info -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">
+            <a href="https://gumroad.com/a/75084915"
+              ><img
+                src="img/vendor/doka-logo.svg"
+                alt="Doka"
+                style="position: relative; top: -5px;"
+            /></a>
+            image editor
+          </h3>
+        </div>
+        <div class="panel-body">
+          <p>
+            <a href="https://gumroad.com/a/75084915">Doka Image Editor</a>
+            integrates smoothly with
+            <a href="https://github.com/blueimp/jQuery-File-Upload"
+              >jQuery File Upload</a
+            >
+            and creates a super fast image editing experience for your users.
+          </p>
+          <ul>
+            <li>Five Minute Install</li>
+            <li>Set Crop Masks and Guides</li>
+            <li>Define Aspect Ratio Options</li>
+            <li>Rotate, Resize, and Flip Images</li>
+            <li>Add Markup and Annotations</li>
+            <li>Color Adjustment Controls</li>
+            <li>Apply Filter Effects</li>
+          </ul>
+          <p><a href="https://gumroad.com/a/75084915">Learn more</a></p>
+        </div>
+      </div>
       <!--<![endif]-->
       <div class="panel panel-default">
         <div class="panel-heading">
@@ -331,6 +367,11 @@
           </tr>
       {% } %}
     </script>
+    <!--[if gte IE 9]><!-->
+    <!-- Doka Image Editor library -->
+    <script src="js/vendor/doka.polyfill.loader.js"></script>
+    <script src="js/vendor/doka.min.js"></script>
+    <!--<![endif]-->
     <script
       src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"
       integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"

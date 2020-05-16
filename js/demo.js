@@ -9,13 +9,23 @@
  * https://opensource.org/licenses/MIT
  */
 
-/* global $ */
+/* global $, Doka */
 
 $(function () {
   'use strict';
 
   // Initialize the jQuery File Upload widget:
   $('#fileupload').fileupload({
+    // Setup Doka Image Editor:
+    doka: window.Doka && Doka.create(),
+    edit:
+      window.Doka &&
+      Doka.supported() &&
+      function (file) {
+        return this.doka.edit(file).then(function (output) {
+          return output && output.file;
+        });
+      },
     // Uncomment the following to send cross-domain cookies:
     //xhrFields: {withCredentials: true},
     url: 'server/php/'
